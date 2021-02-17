@@ -12,7 +12,7 @@ public class LoggingController {
 
     @GetMapping("/")
     public String version() {
-        return version;
+        return String.format("project version : %s",version);
     }
 
     @GetMapping("/health")
